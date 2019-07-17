@@ -24,6 +24,12 @@ public class EvaluadorMultasLogger extends EvaluadorMultas{
 	 * Aca, deberiamos Guardar la multa en el regMap o alguna
 	 * otra forma de almacenamiento
 	 * (BDD, por ej?)
+	 * 
+	 * 
 	 */
+		
+		//GENERADOR DE UUIDs NATIVO EN JAVA
+
+		System.out.println(java.util.UUID.randomUUID().toString());
 	}
 }
