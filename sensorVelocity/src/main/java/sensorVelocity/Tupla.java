@@ -2,6 +2,9 @@ package sensorVelocity;
 
 import org.apache.commons.lang.builder.HashCodeBuilder;
 
+import sensorclima.TipoClima;
+import sensorvelocidad.TipoVehiculo;
+
 public class Tupla {
 	
 	private sensorvelocidad.TipoVehiculo tipoVehiculo;
@@ -46,6 +49,12 @@ public class Tupla {
 	public int hashcode() {
 		return HashCodeBuilder.reflectionHashCode(this);
 	}
+	public Tupla(TipoVehiculo tipoVehiculo, TipoClima tipoClima) {
+		super();
+		this.tipoVehiculo = tipoVehiculo;
+		this.tipoClima = tipoClima;
+	}
+	
 	
 	
 
