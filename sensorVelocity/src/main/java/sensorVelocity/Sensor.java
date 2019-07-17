@@ -1,20 +1,24 @@
 package sensorVelocity;
 
-import sensorVelocity.clase2.EvaluadorMultas;
-
 public class Sensor {
-	private sensorclima.Sensor clima;
-	private sensorvelocidad.Sensor velocidad;
+	
 	private EvaluadorMultas eva;
-	public Sensor(sensorclima.Sensor clima, sensorvelocidad.Sensor velocidad, EvaluadorMultas eva) {
+	public Sensor(EvaluadorMultas eva) {
 		super();
-		this.clima = clima;
-		this.velocidad = velocidad;
+		
 		this.eva = eva;
 	}
 	
 	public Sensor() {
 		
+	}
+
+	public EvaluadorMultas getEva() {
+		return eva;
+	}
+
+	public void setEva(EvaluadorMultas eva) {
+		this.eva = eva;
 	}
 	
 	

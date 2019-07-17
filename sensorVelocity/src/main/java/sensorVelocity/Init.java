@@ -1,8 +1,5 @@
 package sensorVelocity;
 
-import sensorVelocity.clase2.EvaluadorMultas;
-import sensorVelocity.clase2.EvaluadorMultasLogger;
-
 public class Init {
 
 	public static void main(String[] args) {
@@ -13,7 +10,7 @@ public class Init {
 		while(true) {
 //			sensorvelocidad.DatosVehiculo datos = sV.sensarVehiculo();
 //			sensorclima.TipoClima clima = sC.sensar();
-		Sensor s = new Sensor(sC,sV,new EvaluadorMultasLogger(new EvaluadorMultas()));	
+		Sensor s = new Sensor(new EvaluadorMultasLogger(new EvaluadorMultas(sC,sV)));	
 			
 			
 			
